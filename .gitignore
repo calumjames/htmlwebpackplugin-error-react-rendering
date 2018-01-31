@@ -1,0 +1,7 @@
+# Dist directory with compiled bundle
+bundle.js
+bundle.min.js
+
+# Dependency directory
+node_modules
+npm-debug.log
