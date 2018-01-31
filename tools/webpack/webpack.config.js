@@ -5,7 +5,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const currentDirectory = path.resolve(__dirname, '..');
 const srcPath = path.resolve(currentDirectory, '..', 'src');
-const entryPoint = path.resolve(srcPath, 'Index.js');
+const entryPoint = path.resolve(srcPath, 'App.js');
 const buildPath = path.resolve(currentDirectory, '..', 'dist');
 const nodeModulesPath = path.resolve(currentDirectory, '..', 'node_modules');
 const webpackToolsPath = path.resolve(currentDirectory, 'webpack');
@@ -14,7 +14,7 @@ const indexRendererPath = path.resolve(webpackToolsPath, 'indexRenderer');
 const config = {
   devtool: 'source-map',
   entry: {
-    application: [entryPoint]
+    app: [entryPoint]
   },
   output: {
     path: buildPath,

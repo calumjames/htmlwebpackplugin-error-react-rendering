@@ -5,7 +5,9 @@ import { Loaded } from './components/Loaded';
 
 const App = () => <Loaded />;
 
-ReactDOM.render(<App />, document.querySelector('main'));
+setTimeout(() => {
+  ReactDOM.render(<App />, document.querySelector('main'));
+}, 2000);
 
 
 
